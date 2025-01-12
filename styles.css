@@ -1,10 +1,12 @@
 /* تصميم الصفحة */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f7fc;
     color: #333;
+    direction: rtl; /* دعم النصوص العربية */
+    text-align: right; /* محاذاة النصوص من اليمين */
 }
 
 /* تصميم الهيدر */
@@ -12,7 +14,8 @@ header {
     text-align: center;
     background-color: #007bff;
     color: white;
-    padding: 20px;
+    padding: 30px;
+    border-bottom: 5px solid #ffdd57;
 }
 
 header h1 {
@@ -31,26 +34,50 @@ header p {
 
 /* تصميم الأقسام */
 main {
-    padding: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     color: #007bff;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
 section p {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* تصميم قسم الحسابات */
+#accounts ul {
+    list-style: none;
+    padding: 0;
+}
+
+#accounts li {
+    margin: 15px 0;
+}
+
+#accounts a {
+    font-size: 1.2em;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#accounts a:hover {
+    color: #ffdd57;
 }
 
 /* تصميم الفوتر */
@@ -58,7 +85,7 @@ footer {
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     position: relative;
     bottom: 0;
     width: 100%;
